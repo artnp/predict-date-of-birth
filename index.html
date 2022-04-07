@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Srisakdi&display=swap');
+        body{
+            font-family: 'Srisakdi', cursive;
+            font-size:x-large
+        }
+        </style>
+    
+    <title>ดู ดวง ชะตา ปี เดือน วัน กำเนิด ว่า จะ ดี แล ร้าย</title>
+</head>
+<body>
+    <center>
+    <h1>ดู ดวง ชะตา ปี เดือน วัน กำเนิด ว่า จะ ดี แล ร้าย</h1>
+   กำเนิด 
+       วัน: <select id="day" class="day" style="font-size:30px;width:160px;height:40px">
+            <option value="1">วัน อาทิตย์</option>
+            <option value="2">วัน จันทร์</option>
+            <option value="3">วัน อังคาร</option>
+            <option value="4">วัน พุฒ</option>
+            <option value="5">วัน พฤหัศบดิ์</option>
+            <option value="6">วัน สุกร์</option>
+            <option value="7">วัน เสาร์</option>
+          </select> 
+          เดือน: <select id="month" class="month" style="font-size:30px;width:80px;height:40px">
+            <option value="1">๑</option>
+            <option value="2">๒</option>
+            <option value="3">๓</option>
+            <option value="4">๔</option>
+            <option value="5">๕</option>
+            <option value="6">๖</option>
+            <option value="7">๗</option>
+            <option value="8">๘</option>
+            <option value="9">๙</option>
+            <option value="10">๑๐</option>
+            <option value="11">๑๑</option>
+            <option value="12">๑๒</option>
+          </select> 
+          ปี: <select id="year" class="year" style="font-size:30px;width:100px;height:40px">
+            <option value="ชวด">ชวด</option>
+            <option value="ฉลู">ฉลู</option>
+            <option value="ขาน">ขาน</option>
+            <option value="เถาะ">เถาะ</option>
+            <option value="มะโรง">มะโรง</option>
+            <option value="มะเสง">มะเสง</option>
+            <option value="มะเมีย">มะเมีย</option>
+            <option value="มะแม">มะแม</option>
+            <option value="วอก">วอก</option>
+            <option value="ระกา">ระกา</option>
+            <option value="จอ">จอ</option>
+            <option value="กุล">กุล</option>
+          </select> 
+      => <button class="cal" onsubmit="cal()" style="font-size:24px">ทำนาย</button>
+      <br><br>
+      <hr>
+   <b><div id='head'></div></b><br>
+   <div id='text'></div>
+
+     
+    </center>
+    <script>
+
+
+function cal() {
+day = document.getElementById("day").value
+month = document.getElementById("month").value
+year = document.getElementById("year").value
+
+
+if (year === 'ชวด' && month === '5' || year === 'ชวด' && month === '11' || year === 'ชวด' && day === '1' || year === 'ชวด' && day === '7'){
+    document.getElementById('head').innerHTML = '• เทวดา ขี่ หนู'
+    document.getElementById('text').innerHTML = 'ผู้ นั้น เปน คน มี สติ ปัญญา จะ ได้ ดี พอ เลี้ยง ตัว ได้ แต่ มัก เกิด ความ วิวาท เพราะ คู่ ของ ตน เอง'
+} else if (year === 'ชวด' && month === '6' || year === 'ชวด' && month === '12' || year === 'ชวด' && day === '2'){
+    document.getElementById('head').innerHTML = '• เทพดา ขี่ เรือ กัลยา'
+    document.getElementById('text').innerHTML = 'ผู้ นั้น จะ มี วาศนา ทรัพย์ สิน เงิน ทอง มาก แต่ มัก ต้อง สัญจร ไป มา ทุก ทิศ ถ้า ทำ มา ค้า ขาย ไป ทาง นาวา จะ เกิด ลาภ'
+} else if (year === 'ชวด' && month === '7' || year === 'ชวด' && month === '1' || year === 'ชวด' && day === '3'){
+    document.getElementById('head').innerHTML = '• หญิง ขี่ โค'
+    document.getElementById('text').innerHTML = 'ผู้ นั้น จะ ต้อง ตก ระกำ ลำบาก สัก ครั้ง หนึ่ง มัก จะ ต้อง แดด ลม หา กิน ด้วย แรง ของ ตน ลำบาก มาก'
+} else if (year === 'ชวด' && month === '8' || year === 'ชวด' && month === '2' || year === 'ชวด' && day === '4'){
+    document.getElementById('head').innerHTML = '• หญิง อยู่ เรือน'
+    document.getElementById('text').innerHTML = 'ผู้ นั้น จะ มี ทรัพย์ สิน บริบูรณ์ จะ ได้ ลาภ เพราะ ผู้ อื่น นำ มา ให้ ถ้า หญิง ดี ขาย พอ ประมาณ'
+} else if (year === 'ชวด' && month === '9' || year === 'ชวด' && month === '3' || year === 'ชวด' && day === '5'){
+    document.getElementById('head').innerHTML = '• คน ตำ ข้าว'
+    document.getElementById('text').innerHTML = 'ผู้ นั้น อาภัพ นัก จะ ต้อง เหนื่อย ยาก เหมือน ทาษา'
+} else if (year === 'ชวด' && month === '10' || year === 'ชวด' && month === '4' || year === 'ชวด' && day === '6'){
+    document.getElementById('head').innerHTML = '• เทพดา ขี่ นาค'
+    document.getElementById('text').innerHTML = 'ผู้ นั้น ใจ  ฅอ ดุร้าย แต่ มี อำนาจ มัก เกิด ความ เดือด เนื้อ ร้อน ใจ'
+}
+
+if (year === 'ฉลู' && month === '5' || year === 'ฉลู' && month === '11' || year === 'ฉลู' && day === '1' || year === 'ฉลู' && day === '7'){
+    document.getElementById('head').innerHTML = '• มนุษย์ ขี่ โค'
+    document.getElementById('text').innerHTML = 'ผู้ นั้น พอ เลี้ยง ตัว ได้ แต่ ใจ ไม่ แน่ นอน บาง ที ดี บาง ที ร้าย นัก แล'
+} else if (year === 'ฉลู' && month === '6' || year === 'ฉลู' && month === '12' || year === 'ฉลู' && day === '2'){
+    document.getElementById('head').innerHTML = '• คน ติด ฆา ต้อง โทษ'
+    document.getElementById('text').innerHTML = 'ผู้ นั้น จะ ลำบาก นัก มัก เกิด ถ้อย ความ ถ้า ชาย จะ ลำบาก เพราะ หญิง ให้ โทษ ถ้า หญิง จะ ลำบาก เพราะ ชาย ปอง ร้าย'
+} else if (year === 'ฉลู' && month === '7' || year === 'ฉลู' && month === '1' || year === 'ฉลู' && day === '3'){
+    document.getElementById('head').innerHTML = '• บุรุษ ขี่ สินธพ'
+    document.getElementById('text').innerHTML = 'ผู้ นั้น เปน คน ชอบ เที่ยว มัก อยู่ เรือน ไม่ ติด ถ้า ทำ ราชการ ดี นัก'
+} else if (year === 'ฉลู' && month === '8' || year === 'ฉลู' && month === '2' || year === 'ฉลู' && day === '4'){
+    document.getElementById('head').innerHTML = '• ผัว เมีย วิวาท กัน'
+    document.getElementById('text').innerHTML = 'ผู้ นั้น ปาก ร้าย โท โส มาก มัก เกิด ทุบ ตี กัน เนือง ๆ ถ้า มิ ฉนั้น มัก ต้อง บาด เจ็บ'
+} else if (year === 'ฉลู' && month === '9' || year === 'ฉลู' && month === '3' || year === 'ฉลู' && day === '5'){
+    document.getElementById('head').innerHTML = '• กุมาร ขี่ โค'
+    document.getElementById('text').innerHTML = 'ผู้ นั้น เมื่อ น้อย ลำบาก เมื่อ ใหญ่ จะ ได้  ดี จะ มี บุญ วาศนา ด้วย กำลัง  ของ ตน เอง'
+} else if (year === 'ฉลู' && month === '10' || year === 'ฉลู' && month === '4' || year === 'ฉลู' && day === '6'){
+    document.getElementById('head').innerHTML = '•  บุรุษ ขี่ นาค'
+    document.getElementById('text').innerHTML = 'ผู้ นั้น เปน คน ใจ ร้อน ทำการ เร็ว นัก โทโส ดุ แต่ มี คน กลัว'
+}
+
+
+if (year === 'ขาน' && month === '5' || year === 'ขาน' && month === '11' || year === 'ขาน' && day === '1' || year === 'ขาน' && day === '7'){
+    document.getElementById('head').innerHTML = '• ยักษ์ ผีเสื้อ ขี่เสือ'
+    document.getElementById('text').innerHTML = 'ผู้ นั้น ดุ ร้าย นัก แต่ เลี้ยง บุตร ยาก พูดจา คำ เดียว ไม่ กลับ กลอก มี อำนาจ'
+} else if (year === 'ขาน' && month === '6' || year === 'ขาน' && month === '12' || year === 'ขาน' && day === '2'){
+    document.getElementById('head').innerHTML = '• บุรูษ มี บริวาร'
+    document.getElementById('text').innerHTML = 'ผู้ นั้น จะ ได้ เปน ใหญ่ จะ มี คำ ทาษ บริวาร มาก ทำ ราชการ ดีนัก'
+} else if (year === 'ขาน' && month === '7' || year === 'ขาน' && month === '1' || year === 'ขาน' && day === '3'){
+    document.getElementById('head').innerHTML = '• นารี ขี่ นาค'
+    document.getElementById('text').innerHTML = 'ผู้ นั้น เปน คน ใจ แขง ใจ พอ แต่ การ สนุกนี์ มัก จะ มี โรค ติด ตัว โทโส มาก'
+} else if (year === 'ขาน' && month === '8' || year === 'ขาน' && month === '2' || year === 'ขาน' && day === '4'){
+    document.getElementById('head').innerHTML = '• บุรุษ นอน ใน เรือน หลวง'
+    document.getElementById('text').innerHTML = 'ผู้ นั้น จะ ได้ ดี มี ความ ศุข มาก จะ มี ผู้ อุปถัมภ์ ไม่ ต้อง เหนื่อย เลย'
+} else if (year === 'ขาน' && month === '9' || year === 'ขาน' && month === '3' || year === 'ขาน' && day === '5'){
+    document.getElementById('head').innerHTML = '• หญิง อยู่ เรือน'
+    document.getElementById('text').innerHTML = 'ผู้ นั้น จะ มี ทรัพย์ สิน เงิน ทอง แล มี ความ ศุข มาก'
+} else if (year === 'ขาน' && month === 'ขาน' || year === 'ขาน' && month === '4' || year === 'ขาน' && day === '6'){
+    document.getElementById('head').innerHTML = '• พระยา ทรง นาคา'
+    document.getElementById('text').innerHTML = 'ผู้ นั้น เปน คน ใจ ร้อน แต่ มี อำนาจ มี ความ บ่อยๆ ทำ ให้ ร้อน ใจ'
+}
+
+if (year === 'เถาะ' && month === '5' || year === 'เถาะ' && month === '11' || year === 'เถาะ' && day === '1' || year === 'เถาะ' && day === '7'){
+    document.getElementById('head').innerHTML = '• หญิง ขี่ กะต่าย'
+    document.getElementById('text').innerHTML = 'ผู้ นั้น จะ มี ความ ศุข สะบาย บริบูรณ์ ทุก สิ่ง'
+} else if (year === 'เถาะ' && month === '6' || year === 'เถาะ' && month === '12' || year === 'เถาะ' && day === '2'){
+    document.getElementById('head').innerHTML = '• พระ ยา ทรง สินธพ'
+    document.getElementById('text').innerHTML = 'ผู้ นั้น จะ มี บุญ จะ มี เดชานุภาพ'
+} else if (year === 'เถาะ' && month === '7' || year === 'เถาะ' && month === '1' || year === 'เถาะ' && day === '3'){
+    document.getElementById('head').innerHTML = '• บุรุษ นั่ง เรือ คน พาย'
+    document.getElementById('text').innerHTML = 'ผู้ นั้น จะ มั่ง มี ทรพย์สิน เงิน ทอง ค่า ทาษ จะ มี ความ ศุข มาก ไม่ ต้อง เหนื่อย เลย'
+} else if (year === 'เถาะ' && month === '8' || year === 'เถาะ' && month === '2' || year === 'เถาะ' && day === '4'){
+    document.getElementById('head').innerHTML = '• มัทรี ไป ป่า'
+    document.getElementById('text').innerHTML = 'ผู้ นั้น จะ ต้อง ตก ระกำ ลำบาก จะ ต้อง พลัด พราก จาก กัน ไป ใน ที่ อื่น เปน คน เจ้า ทุกข์'
+} else if (year === 'เถาะ' && month === '9' || year === 'เถาะ' && month === '3' || year === 'เถาะ' && day === '5'){
+    document.getElementById('head').innerHTML = '• คน ร้าย วิวาท กัน'
+    document.getElementById('text').innerHTML = 'ผู้ นั้น เปน คน โท โส มาก พอ ใจ ใน ทาง ลักเลง มัก เกิด ความ บ่อย ๆ มิ ฉนั้น จะ ต้อง ไข้ เจ็บ เนือง ๆเคราะห์ ร้าย มิ ดี'
+} else if (year === 'เถาะ' && month === 'เถาะ' || year === 'เถาะ' && month === '4' || year === 'เถาะ' && day === '6'){
+    document.getElementById('head').innerHTML = '• มนุษย์ ขี่ นาค'
+    document.getElementById('text').innerHTML = 'ผู้ นั้น เปน คนใจ กล้า หาญ ทำ ราชการ จะ ได้ เปน ใหญ่ แต่ เปน คน มี โรค'
+}
+
+if (year === 'มะโรง' && month === '5' || year === 'มะโรง' && month === '11' || year === 'มะโรง' && day === '1' || year === 'มะโรง' && day === '7'){
+    document.getElementById('head').innerHTML = '• เทพบุตร ขี่ นาค'
+    document.getElementById('text').innerHTML = 'ผู้ นั้น เปน คน ใจ มัก โท โส ถ้า โกรธ ใคร นาน หาย แต่ ทำ ราชการ ดี'
+} else if (year === 'มะโรง' && month === '6' || year === 'มะโรง' && month === '12' || year === 'มะโรง' && day === '2'){
+    document.getElementById('head').innerHTML = '• พระยา นั่ง แท่น'
+    document.getElementById('text').innerHTML = 'ผู้ นั้น จะ มี บุญ จะ ได้ เปน ใหญ่ มี ลาภ มา เนือง ๆ'
+} else if (year === 'มะโรง' && month === '7' || year === 'มะโรง' && month === '1' || year === 'มะโรง' && day === '3'){
+    document.getElementById('head').innerHTML = '• คน นัก โทษ'
+    document.getElementById('text').innerHTML = 'ผู้ นั้น จะ ต้องตก ทุกข์ ได้ ยาก มี สัตรู ปอง ร้าย มิ ฉนั้น จะ ต้อง ไข้ เจ็บ แต่ ปัญญา พอ คุ้ม ตัว ได้'
+} else if (year === 'มะโรง' && month === '8' || year === 'มะโรง' && month === '2' || year === 'มะโรง' && day === '4'){
+    document.getElementById('head').innerHTML = '• รูป หมอ ควาน ช้าง'
+    document.getElementById('text').innerHTML = 'ผู้ นั้น เปน คน อาภัพ ต้อง ลำบาก หา เลี้ยง ตัว ยาก จะ มี เงิน ไม่ มาก'
+} else if (year === 'มะโรง' && month === '9' || year === 'มะโรง' && month === '3' || year === 'มะโรง' && day === '5'){
+    document.getElementById('head').innerHTML = '• ขุนนาง ขี่ ม้า'
+    document.getElementById('text').innerHTML = 'ผู้ นั้น จะ ได้ เปน ขุนนาง แต่ ต้อง ไป ทาง ไกล บ่อย ๆ มี ทรัพย์ แล'
+} else if (year === 'มะโรง' && month === '10' || year === 'มะโรง' && month === '4' || year === 'มะโรง' && day === '6'){
+    document.getElementById('head').innerHTML = '• พระยา ขี่ นาค'
+    document.getElementById('text').innerHTML = 'ผู้ นั้น จะ ได้ ดี ตัว สบาย แต่ ใจ ร้อน มี ศุข น้อย'
+}
+
+if (year === 'มะเสง' && month === '5' || year === 'มะเสง' && month === '11' || year === 'มะเสง' && day === '1' || year === 'มะเสง' && day === '7'){
+    document.getElementById('head').innerHTML = '• มนุษย์ ขี่ งู'
+    document.getElementById('text').innerHTML = 'ผู้ นั้น จะ มี ศักดานุภาพ แต่ เปน คน ดุ มัก โกรธ ใคร แล้ว ไม่ รู้ หาย แต่ ทำ ราชการ ดี'
+} else if (year === 'มะเสง' && month === '6' || year === 'มะเสง' && month === '12' || year === 'มะเสง' && day === '2'){
+    document.getElementById('head').innerHTML = '• กุมาร มี คน กั้น ร่ม'
+    document.getElementById('text').innerHTML = 'ผู้ นั้น จะ มี บุญ แต่ เล็ก จะ มี ค่า ทาษ บริวาร มาก บิดา มารดา จะ ได้ พึ่ง'
+} else if (year === 'มะเสง' && month === '7' || year === 'มะเสง' && month === '1' || year === 'มะเสง' && day === '3'){
+    document.getElementById('head').innerHTML = '• คอ ติด คา'
+    document.getElementById('text').innerHTML = 'ผู้ นั้น อาภัพ มัก จะ ต้อง ถ้อย ความ แล ผู้ อื่ จะปอง ร้าย ให้ ได้ ความ ลำบาก ถ้า มิ ฉนั้น มัก ไข้ เจ็บ เนือง ๆ มิ ดี'
+} else if (year === 'มะเสง' && month === '8' || year === 'มะเสง' && month === '2' || year === 'มะเสง' && day === '4'){
+    document.getElementById('head').innerHTML = '• บุรุษ นั่ง แท่น'
+    document.getElementById('text').innerHTML = 'ผู้ นั้น จะ มี วาศนา มั่ง มี นัก จะ ได้ ความ ศุข ทุก เมื่อ แล'
+} else if (year === 'มะเสง' && month === '9' || year === 'มะเสง' && month === '3' || year === 'มะเสง' && day === '5'){
+    document.getElementById('head').innerHTML = '• หมอ ควาน ช้าง'
+    document.getElementById('text').innerHTML = 'ผู้ นั้น อาภัพ จะ ต้อง เหนื่อย ยาก เหงื่อ ไหล ไคล ย้อย จึ่ง จะ เลี้ยง ตัว ได้ มิ ฉนั้น ต้อง อาไศรย ท่าน ผู้ อื่น เลี้ยง'
+} else if (year === 'มะเสง' && month === '10' || year === 'มะเสง' && month === '4' || year === 'มะเสง' && day === '6'){
+    document.getElementById('head').innerHTML = '• มนุษย์ ขี่ นาค'
+    document.getElementById('text').innerHTML = 'ผู้ นั้น เปน คน ใจ ร้อน ทำ การ มี มานะ ไม่ ยอม แพ้ ใคร ถ้า ทำ ราชการ จะ ได้ ดี'
+}
+
+if (year === 'มะเมีย' && month === '5' || year === 'มะเมีย' && month === '11' || year === 'มะเมีย' && day === '1' || year === 'มะเมีย' && day === '7'){
+    document.getElementById('head').innerHTML = '• นาง เทพธิดา นั่ง หลัง ภาชี'
+    document.getElementById('text').innerHTML = 'ผู้ นั้น จะ เปน คน ใจ อ่อน สั่ง สอน ง่าย รู้ จัก คุณ ท่าน จะ มี ทรัพย์ พอ เลี้ยง ตัว'
+} else if (year === 'มะเมีย' && month === '6' || year === 'มะเมีย' && month === '12' || year === 'มะเมีย' && day === '2'){
+    document.getElementById('head').innerHTML = '• หมอ ควาน ช้าง'
+    document.getElementById('text').innerHTML = 'ผู้ นั้น จะ ต้อง ลำ บาก หา กิน จะ ได้ ทรัพย์ โดย ยาก'
+} else if (year === 'มะเมีย' && month === '7' || year === 'มะเมีย' && month === '1' || year === 'มะเมีย' && day === '3'){
+    document.getElementById('head').innerHTML = '• ผัว เมีย วิวาท กัน'
+    document.getElementById('text').innerHTML = 'ผู้ นั้น อาภัพ นัก จะ เลี้ยง ตัว โดย ยาก มัก เกิด ถ้อย ความ แล วิวาท กัน ด้วย คู่ ของ ตน ม ฉนั้น มัก จะ มาก ชู้ หลาย เมีย'
+} else if (year === 'มะเมีย' && month === '8' || year === 'มะเมีย' && month === '2' || year === 'มะเมีย' && day === '4'){
+    document.getElementById('head').innerHTML = '• เทพดา ขี่ สินธพ'
+    document.getElementById('text').innerHTML = 'ผู้ นั้น จะ มี บุญ แต่ ต้อง เดิน มาก จึง จะได้ ดี แล'
+} else if (year === 'มะเมีย' && month === '9' || year === 'มะเมีย' && month === '3' || year === 'มะเมีย' && day === '5'){
+    document.getElementById('head').innerHTML = '• พระยา ขึ้น แคร่'
+    document.getElementById('text').innerHTML = 'ผู้ นั้น จะ มี บุญ มี วาศนา มาก บริบูรณ์ ทุก สิ่ง'
+} else if (year === 'มะเมีย' && month === '10' || year === 'มะเมีย' && month === '4' || year === 'มะเมีย' && day === '6'){
+    document.getElementById('head').innerHTML = '• เทพดา ขี่ นาค'
+    document.getElementById('text').innerHTML = 'ผู้ นั้น เปน คน ใจ เร็ว จะ ทำ การ มัก ไม่ สำเร็จ แต่ วาศนา พอ คุ้ม ตัว'
+}
+
+if (year === 'มะแม' && month === '5' || year === 'มะแม' && month === '11' || year === 'มะแม' && day === '1' || year === 'มะแม' && day === '7'){
+    document.getElementById('head').innerHTML = '• เทพธิดา ขี่ แพะ'
+    document.getElementById('text').innerHTML = 'ผู้ นั้น เปน คน ใจ ดี ไม่ มี โม โห ชอบ ทาง กุศล ปัญญา ดี มี ทรัพย์'
+} else if (year === 'มะแม' && month === '6' || year === 'มะแม' && month === '12' || year === 'มะแม' && day === '2'){
+    document.getElementById('head').innerHTML = '• คน เมา พาย เรือย'
+    document.getElementById('text').innerHTML = 'ผู้ นั้น อาภัพ ถึง จะ มี ทรัพย์ ตัว ก็ ต้อง เหนื่อย หา เช้า กิน ค่ำ ได้ ความ ลำ บาก'
+} else if (year === 'มะแม' && month === '7' || year === 'มะแม' && month === '1' || year === 'มะแม' && day === '3'){
+    document.getElementById('head').innerHTML = '• เทพดา ทรง สินธพ'
+    document.getElementById('text').innerHTML = 'ผู้ นั้น จะ มี วาศนา แต่ ต้อง เหนื่อย มัก จะ ไป ที่ อื่น จึ่ง จะ ได้ ดี'
+} else if (year === 'มะแม' && month === '8' || year === 'มะแม' && month === '2' || year === 'มะแม' && day === '4'){
+    document.getElementById('head').innerHTML = '• พระยา นั่ง แท่น'
+    document.getElementById('text').innerHTML = 'ผู้ นั้น จะ มี บุญ จะ ได้ เปน ใหญ่ กว่า ตระกูล ตน จะ มี ความ ศุข มาก'
+} else if (year === 'มะแม' && month === '9' || year === 'มะแม' && month === '3' || year === 'มะแม' && day === '5'){
+    document.getElementById('head').innerHTML = '• มานพ ขี่ ช้าง'
+    document.getElementById('text').innerHTML = 'ผู้ นั้น ถึง จะ มี ยศ ศักดิ์ ก็ ต้อง เหนื่อย จะ หา ความ สบาย มิได้ เลย'
+} else if (year === 'มะแม' && month === '10' || year === 'มะแม' && month === '4' || year === 'มะแม' && day === '6'){
+    document.getElementById('head').innerHTML = '• มนุษย์ ขี่ นาค'
+    document.getElementById('text').innerHTML = 'ผู้ นั้น ใจ เร็ว เจรจา องอาจ มัก ชอบ ทาง ถ้อย ความ มี ทิฐิ มานะ มาก แต่ มี ยศ'
+}
+
+if (year === 'วอก' && month === '5' || year === 'วอก' && month === '11' || year === 'วอก' && day === '1' || year === 'วอก' && day === '7'){
+    document.getElementById('head').innerHTML = '• รูป ยักษ ขี่ ลิง'
+    document.getElementById('text').innerHTML = 'ผู็ นั้น ใจ คอ ดุร้าย ไม่ กลัว บาป ทำ การ เลว ทราม อาภัพ มิดี'
+} else if (year === 'วอก' && month === '6' || year === 'วอก' && month === '12' || year === 'วอก' && day === '2'){
+    document.getElementById('head').innerHTML = '• มานพ อยู่ ใต้ เสวตรฉัตร'
+    document.getElementById('text').innerHTML = 'ผู้ นั้น จะ มี บุญ มี วาศนา จะ ได้ ดี มี ศุข มาก'
+} else if (year === 'วอก' && month === '7' || year === 'วอก' && month === '1' || year === 'วอก' && day === '3'){
+    document.getElementById('head').innerHTML = '• คน ตี กัน'
+    document.getElementById('text').innerHTML = 'ผู้ นั้น จะ ต้อง ลำ บาก เปน คน เก่ง เลี้ยง ตัว ยาก อาภัพ นัก'
+} else if (year === 'วอก' && month === '8' || year === 'วอก' && month === '2' || year === 'วอก' && day === '4'){
+    document.getElementById('head').innerHTML = '• ผัว เมีย วิวาท กัน'
+    document.getElementById('text').innerHTML = 'ผู้ นั้น วาศนา อาภัพ มัก ต้อง เศร้า โศก ด้วย คู่ ของ ตน จะ อยู่ ไหน ก็ ไม่ นาน มิดี'
+} else if (year === 'วอก' && month === '9' || year === 'วอก' && month === '3' || year === 'วอก' && day === '5'){
+    document.getElementById('head').innerHTML = '• หญิง ขี่ กระบือ'
+    document.getElementById('text').innerHTML = 'ผู้ นั้น จะ ต้อง เหนื่อย มาก อาไศรย ท่าน ผู้ อื่น เลี้ยง'
+} else if (year === 'วอก' && month === '10' || year === 'วอก' && month === '4' || year === 'วอก' && day === '6'){
+    document.getElementById('head').innerHTML = '• เทพดา ขี่ นาค'
+    document.getElementById('text').innerHTML = 'ผู้ นั้น ใจ ร้อน เจรจา โว หาร ไม่ เกรง ใจ คน แต่ มี อำนาจ ดี'
+}
+
+if (year === 'ระกา' && month === '5' || year === 'ระกา' && month === '11' || year === 'ระกา' && day === '1' || year === 'ระกา' && day === '7'){
+    document.getElementById('head').innerHTML = '• ยักษ ขี่ ไก่'
+    document.getElementById('text').innerHTML = 'ผู้ นั้น ใจ ดุ โท โส มาก มัก พอ ใจ ใน การ วิวาท'
+} else if (year === 'ระกา' && month === '6' || year === 'ระกา' && month === '12' || year === 'ระกา' && day === '2'){
+    document.getElementById('head').innerHTML = '• มานพ ขี่ ภาชี'
+    document.getElementById('text').innerHTML = 'ผู้ นั้น มัก ต้อง เดิน มาก หาหอน พอ เลี้ยง ตัว ได้ ทำ ราชการ ดี จะ มี ยศศักดิ์'
+} else if (year === 'ระกา' && month === '7' || year === 'ระกา' && month === '1' || year === 'ระกา' && day === '3'){
+    document.getElementById('head').innerHTML = '• พระยา นอน แท่น'
+    document.getElementById('text').innerHTML = 'ผู้ นั้น มี บุญ นัก จะ ได้ ความ ศุข ทุก เมื่อ หา ความ ลำบาก มิได้ เลย'
+} else if (year === 'ระกา' && month === '8' || year === 'ระกา' && month === '2' || year === 'ระกา' && day === '4'){
+    document.getElementById('head').innerHTML = '• มานพ ขี่ โค'
+    document.getElementById('text').innerHTML = 'ผู้ นั้น จะ มี ยศศักดิ์ แต่ หาศุข มิ ได้ มัก ต้อง เดิน ไกล'
+} else if (year === 'ระกา' && month === '9' || year === 'ระกา' && month === '3' || year === 'ระกา' && day === '5'){
+    document.getElementById('head').innerHTML = '• หญิง หาบ'
+    document.getElementById('text').innerHTML = 'วาศนา ของ ผู้ นั้น อาภัพ นัก จะ ต้อง ลำบาก ถึง จะ เปน ผู้ ดี ก็ ต้อง เหนื่อย'
+} else if (year === 'ระกา' && month === '10' || year === 'ระกา' && month === '4' || year === 'ระกา' && day === '6'){
+    document.getElementById('head').innerHTML = '• เทพดา ขี่ นาค'
+    document.getElementById('text').innerHTML = 'ผู้ นั้น เปน คน เก่ง มี อำนาจ คน ทั้ง หลาย ย่อม เกรง กลัว แต่ ทรัพย์ สิน พอ ประมาณ'
+}
+
+if (year === 'จอ' && month === '5' || year === 'จอ' && month === '11' || year === 'จอ' && day === '1' || year === 'จอ' && day === '7'){
+    document.getElementById('head').innerHTML = '• นาง ผีเสื้อ ขี่ สุนักข์'
+    document.getElementById('text').innerHTML = 'ผู้ นั้น ใจ คอ ดุ แต่ เลี้ยง ลูก ง่าย หา กิน พอ จะ เลี้ยง ตัว ได้ แต่ ต้อง ลำบาก เพราะ คู่ ของ ตน'
+} else if (year === 'จอ' && month === '6' || year === 'จอ' && month === '12' || year === 'จอ' && day === '2'){
+    document.getElementById('head').innerHTML = '• มนุษย์ ขี่ นาค'
+    document.getElementById('text').innerHTML = 'ผู้ นั้น จะ มี ทรัพย์ แต่ ใจ ไม่ ยั่ง ยืน เปน คน ใจ เร็ว มี อำนาจ'
+} else if (year === 'จอ' && month === '7' || year === 'จอ' && month === '1' || year === 'จอ' && day === '3'){
+    document.getElementById('head').innerHTML = '• พระยา นั่ง แท่น'
+    document.getElementById('text').innerHTML = 'ผู้ นั้น จะ มี บุญ จะ ได้ เปน ใหญ่ บริบูรณ์ นัก'
+} else if (year === 'จอ' && month === '8' || year === 'จอ' && month === '2' || year === 'จอ' && day === '4'){
+    document.getElementById('head').innerHTML = '• มานพ ขี่ ช้าง'
+    document.getElementById('text').innerHTML = 'ผู็ นั้น เปน คน ชอบ เดิน อาสา เจ้า นาย ดี แต่ มี ทรัพย์ น้อย'
+} else if (year === 'จอ' && month === '9' || year === 'จอ' && month === '3' || year === 'จอ' && day === '5'){
+    document.getElementById('head').innerHTML = '• มานพ ขี่ ม้า'
+    document.getElementById('text').innerHTML = 'ผู้ นั้น ทำ การ เร็วไปไหน ว่องไว ทำ ราชการ ดี มี ยศ'
+} else if (year === 'จอ' && month === '10' || year === 'จอ' && month === '4' || year === 'จอ' && day === '6'){
+    document.getElementById('head').innerHTML = '• เทพดา นั่ง แท่น'
+    document.getElementById('text').innerHTML = 'ผู้ นั้น เปน คนใจ บุญ มี ความ ศุข มาก บริบูรณ์ ทุก สิ่ง'
+}
+
+if (year === 'กุล' && month === '5' || year === 'กุล' && month === '11' || year === 'กุล' && day === '1' || year === 'กุล' && day === '7'){
+    document.getElementById('head').innerHTML = '• หญิง ขี่ สุกร'
+    document.getElementById('text').innerHTML = 'ผู้ นั้น เปน คน ใจ เฉื่อย ปัญญา น้อย ต้อง อาไสย ท่าน ผู้ อื่น มัก ชอบ เปน ธุระ การ งาน คน อื่น ทรัพย์ สิน ได้ ๆ เสีย ๆ'
+} else if (year === 'กุล' && month === '6' || year === 'กุล' && month === '12' || year === 'กุล' && day === '2'){
+    document.getElementById('head').innerHTML = '• พระยา นอน แท่น'
+    document.getElementById('text').innerHTML = 'ผู้ นั้น วาศนา ดี จะ เปน ใหญ่ จะ เปน ที่ พึ่ง แห่ง ญาติ์ มี ความ สบาย มาก ทรัพย์ สิน บริบูรณ์ นัก'
+} else if (year === 'กุล' && month === '7' || year === 'กุล' && month === '1' || year === 'กุล' && day === '3'){
+    document.getElementById('head').innerHTML = '• มนุษย์ นั่ง เรือ กัลยา'
+    document.getElementById('text').innerHTML = 'ผู้ นั้น เปน คน ดี จะ ได้ ลาภ เนื่อง ๆ เปน ที่ นับ ถือ แห่ง คน ทั้ง หลาย'
+} else if (year === 'กุล' && month === '8' || year === 'กุล' && month === '2' || year === 'กุล' && day === '4'){
+    document.getElementById('head').innerHTML = '• บุรษ ขี่ โค'
+    document.getElementById('text').innerHTML = 'ผู้ นั้น จะ ต้อง เหนื่อย ถึง จะ มี ทรัพย์ ต้อง กราก กรำ ลำบาก วาศนา มี พอ คุ้ม ตัว'
+} else if (year === 'กุล' && month === '9' || year === 'กุล' && month === '3' || year === 'กุล' && day === '5'){
+    document.getElementById('head').innerHTML = '• พระยา นั่ง แท่น'
+    document.getElementById('text').innerHTML = 'ผู้ นั้น จะ มี บุญ เปน ที่ นับ ถือ แห่ง คน ทั้ง หลาย ทรัพย์ สิน บริบูรณ์'
+} else if (year === 'กุล' && month === '10' || year === 'กุล' && month === '4' || year === 'กุล' && day === '6'){
+    document.getElementById('head').innerHTML = '• เทพดา ขี่ นาค'
+    document.getElementById('text').innerHTML = 'ผู้ นั้น เปน คน ใจ ร้อน โท โส มาก ไม่ รู้ หาย'
+}
+}
+document.querySelector('.cal').addEventListener("click", ()=>cal())
+
+</script>
+</body>
+</html>
